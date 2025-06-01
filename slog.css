@@ -1,0 +1,187 @@
+.nav-desno {
+    margin-right: 20px;
+    display: flex;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #eee;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer.footer {
+    margin-top: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5a623;
+}
+
+table.tekst {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table.tekst td {
+    vertical-align: top;
+}
+
+table.tekst td:first-child {
+    padding-right: 25px;
+    font-size: 1.1rem;
+    max-width: 55%;
+}
+
+table.tekst td:last-child {
+    max-width: 45%;
+    text-align: center;
+}
+
+table.tekst img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(245, 166, 35, 0.7);
+}
+
+.pod-sliko {
+    color: #f5a623;
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.tekst p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.slika-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.slika-container iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(245, 166, 35, 0.7);
+}
+
+.slika-container a img {
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(245, 166, 35, 0.7);
+    margin-right: 20px;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.slika-container a:last-child img {
+    margin-right: 0;
+}
+
+a.text-white {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.text-white:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    table.tekst, table.tekst tr, table.tekst td {
+        display: block;
+        width: 100%;
+    }
+
+    table.tekst td:first-child {
+        margin-bottom: 20px;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    table.tekst td:last-child {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .slika-container a img {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 90%;
+        height: auto;
+        margin-right: 0 !important;
+    }
+}
+
+.pod-sliko {
+    text-align: center;
+    font-style: italic;
+    color: grey;
+}
+
+.posnetek {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.posebno {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.copyright {
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.slika-v-tekst {
+    float: right;
+}
+
+.galerija {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centriranje po vodoravni osi */
+    gap: 20px; /* Razmik med slikami */
+    padding: 20px;
+}
+
+.galerija-element {
+    border: 1px solid #eee;
+    text-align: center;
+    width: 300px; /* fiksna širina za poravnavo */
+}
+
+.galerija-element img {
+    padding: 5px;
+    width: 100%; /* slika se raztegne na širino div-a */
+    height: auto; /* ohrani razmerje */
+}
+
+.galerija-element img:hover {
+    background-color: rgba(249, 147, 1, 1.00);
+}
